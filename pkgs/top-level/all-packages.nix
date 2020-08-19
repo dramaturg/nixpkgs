@@ -9549,6 +9549,10 @@ in
 
   spirv-llvm-translator = callPackage ../development/compilers/spirv-llvm-translator { };
 
+  stklos = callPackage ../development/interpreters/stklos {
+    stdenv = gccStdenv;
+  };
+
   sqldeveloper = callPackage ../development/tools/database/sqldeveloper {
     jdk = oraclejdk;
   };
